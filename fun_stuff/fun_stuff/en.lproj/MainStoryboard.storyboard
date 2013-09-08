@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Base Number Stuff View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="BaseNumberStuffViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="BASE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnb-gf-7BR">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="AId-Gu-zNz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zli-LZ-Fvs">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123456789" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-n1-Y58">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IiX-gt-38q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="THIS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRc-ly-sBt">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="vko-cV-lNe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="EQUALS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrH-el-p54">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="ReQ-iw-ZPd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnV-JK-wpH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OQl-HC-dyr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rU-wg-Zk1">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="tNv-1f-bwQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="go:" destination="2" eventType="touchUpInside" id="sz2-cO-w4l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Btc-n1-Y58" firstAttribute="top" secondItem="2rU-wg-Zk1" secondAttribute="top" type="default" id="18Q-hq-zl0"/>
+                            <constraint firstItem="Btc-n1-Y58" firstAttribute="top" secondItem="WRc-ly-sBt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1sM-Lr-hvt"/>
+                            <constraint firstAttribute="trailing" secondItem="UnV-JK-wpH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9lv-Fw-me7"/>
+                            <constraint firstItem="UnV-JK-wpH" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GAP-c3-HN0"/>
+                            <constraint firstItem="mnb-gf-7BR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GZc-d8-f0c"/>
+                            <constraint firstItem="2rU-wg-Zk1" firstAttribute="baseline" secondItem="Btc-n1-Y58" secondAttribute="baseline" type="default" id="SqR-Gr-gOu"/>
+                            <constraint firstItem="UnV-JK-wpH" firstAttribute="top" secondItem="IrH-el-p54" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Yuy-rd-igN"/>
+                            <constraint firstItem="2rU-wg-Zk1" firstAttribute="leading" secondItem="Btc-n1-Y58" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="aKy-sU-3r6"/>
+                            <constraint firstItem="Btc-n1-Y58" firstAttribute="bottom" secondItem="2rU-wg-Zk1" secondAttribute="bottom" type="default" id="c8V-H8-uOM"/>
+                            <constraint firstAttribute="trailing" secondItem="Zli-LZ-Fvs" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="cGZ-64-leW"/>
+                            <constraint firstItem="IrH-el-p54" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="css-CH-sB4"/>
+                            <constraint firstItem="mnb-gf-7BR" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="dgE-Jp-Gux"/>
+                            <constraint firstItem="WRc-ly-sBt" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="g4A-xk-Ij1"/>
+                            <constraint firstItem="Zli-LZ-Fvs" firstAttribute="top" secondItem="3" secondAttribute="top" constant="16" id="mWM-D6-Dkg"/>
+                            <constraint firstItem="Zli-LZ-Fvs" firstAttribute="leading" secondItem="mnb-gf-7BR" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="nEm-wP-OO4"/>
+                            <constraint firstItem="Btc-n1-Y58" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qQG-lc-AWR"/>
+                            <constraint firstItem="IrH-el-p54" firstAttribute="top" secondItem="Btc-n1-Y58" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rbZ-dV-gLV"/>
+                            <constraint firstAttribute="trailing" secondItem="2rU-wg-Zk1" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="t5O-ue-Lkj"/>
+                            <constraint firstItem="WRc-ly-sBt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="81" id="zV4-He-YeJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="baseNumberTextField" destination="Zli-LZ-Fvs" id="LNf-qL-uiH"/>
+                        <outlet property="baseTenValue" destination="UnV-JK-wpH" id="Vp8-Z3-7sm"/>
+                        <outlet property="numberStringTextField" destination="Btc-n1-Y58" id="GN1-LF-kR5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="-82"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="BaseNumberStuffViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BaseNumberStuffViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="go:"/>
+                <relationship kind="outlet" name="baseNumberTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="baseTenValue" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="numberStringTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
